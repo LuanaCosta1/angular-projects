@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:ital,wght@0,800;0,900;1,600;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$primary-color: #1D1E2C;
+$bg-color: #142033;
+$text-color: #E3F0FF;
+$light-primary-color: #59656F;
+$lightest-primary-color: #D7CDCC;
+$highlight-color: #9C528B;
+$white-color: #FFFFFF;
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+p, div, h2, h3, span {
+    font-family: $primary-font;
+}
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+h1 {
+    font-family: $secondary-font;
+}

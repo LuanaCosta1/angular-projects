@@ -1,0 +1,204 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Interestelar",
+      "duration": 169,
+      "year": 2017,
+      "rating": 8.7,
+      "description": "As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.",
+      "director": "Christopher Nolan",
+      "stars": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain"
+      ],
+      "poster": "https://br.web.img3.acsta.net/pictures/14/10/31/20/39/476171.jpg",
+      "myRating": 0,
+      "obs": "",
+      "progress": ""
+    },
+    {
+      "id": 2,
+      "title": "The Batman",
+      "duration": 176,
+      "year": 2022,
+      "rating": 8.4,
+      "description": "Da Warner Bros. Pictures chega THE BATMAN com o realizador Matt Reeves no comando e protagonizado por Robert Pattinson no duplo papel de detetive de Gotham City e do seu alter ego, o bilionário solitário Bruce Wayne.",
+      "director": "Matt Reeves",
+      "stars": [
+        "Robert Pattinson",
+        "Zoë Kravitz",
+        "Jeffrey Wright"
+      ],
+      "poster": "https://t.ctcdn.com.br/XDiptbyb8AUjwN_fFj-ns90TrOs=/660x0/smart/i554287.jpeg",
+      "myRating": 0,
+      "obs": "",
+      "progress": ""
+    },
+    {
+      "id": 3,
+      "title": "A Criada",
+      "duration": 145,
+      "year": 2016,
+      "rating": 8.1,
+      "description": "Coreia do Sul, anos 1930. Durante a ocupação japonesa, a jovem Sookee é contratada para trabalhar para uma herdeira nipônica, Hideko, que leva uma vida isolada ao lado do tio autoritário. Só que Sookee guarda um segredo: ela e um vigarista planejam desposar a herdeira, roubar sua fortuna e trancafiá-la em um sanatório. Tudo corre bem com o plano, até que Sookee aos poucos começa a compreender as motivações de Hideko.",
+      "director": "Park Chan-wook",
+      "stars": [
+        "Kim Min-hee",
+        "Ha Jung-woo",
+        "Cho Jin-woong"
+      ],
+      "poster": "http://www.artecines.com.br/wp-content/uploads/2016/10/the-handmaiden.jpg",
+      "myRating": 0,
+      "obs": "",
+      "progress": ""
+    },
+    {
+      "id": 4,
+      "title": "Horton e o Mundo dos Quem",
+      "duration": 86,
+      "year": 2008,
+      "rating": 6.8,
+      "description": "Horton é um elefante que ouve um pedido de socorro vindo de uma partícula de poeira que flutua no ar. Surpreso, ele passa a desconfiar que possa existir vida dentro daquela partícula. Trata-se dos Quem, seres que ignoram a existência de vida fora da cidade em que vivem, a Quemlândia. Mesmo com todos acreditando que ele perdeu o juízo, Horton decide ajudar os moradores de Quemlândia.",
+      "director": "Jimmy Hayward",
+      "stars": [
+        "Jim Carrey(voz)",
+        "Steve Carell(voz)",
+        "Carol Burnett(voz)"
+      ],
+      "poster": "https://br.web.img2.acsta.net/medias/nmedia/18/87/80/67/19961742.jpg",
+      "myRating": 0,
+      "obs": "",
+      "progress": ""
+    },
+    {
+      "id": 5,
+      "title": "Por Água Abaixo",
+      "duration": 86,
+      "year": 2006,
+      "rating": 4,
+      "description": "Roddy é um ratinho acostumado a um bairro luxuoso de Londres. Sem querer, ele dá uma descarga infeliz e acaba nos esgotos, onde terá de aprender a viver de uma forma completamente diferente.",
+      "director": "David Bowers",
+      "stars": [
+        "Hugh Jackman(voz)",
+        "Kate Winslet(voz)",
+        "Ian McKellen(voz)"
+      ],
+      "poster": "https://upload.wikimedia.org/wikipedia/pt/a/a0/PorAguaAbaixo.jpg",
+      "myRating": 10,
+      "obs": "",
+      "progress": ""
+    },
+    {
+      "id": 6,
+      "title": "Os Oito Odiados",
+      "duration": 187,
+      "year": 2015,
+      "rating": 7.8,
+      "description": "Em busca de abrigo para se proteger de uma nevasca, dois caçadores de recompensas, um prisioneiro e um homem que alega ser xerife conhecem quatro estranhos.",
+      "director": "Quentin Tarantino",
+      "stars": [
+        "Samuel L. Jackson",
+        "Kurt Russel",
+        "Jennifer Jason Leigh"
+      ],
+      "poster": "https://br.web.img3.acsta.net/c_310_420/pictures/16/01/07/20/59/207268.jpg",
+      "myRating": 10,
+      "obs": "",
+      "progress": ""
+    },
+    {
+      "id": 7,
+      "title": "Ilha do Medo",
+      "duration": 138,
+      "year": 2010,
+      "rating": 8.2,
+      "description": "Na década de 50, a fuga de uma assassina leva o detetive Teddy Daniels e seu parceiro a investigarem o seu desaparecimento de um quarto trancado em um hospital psiquiátrico. Lá, uma rebelião se inicia e o agente terá que enfrentar seus próprios medos.",
+      "director": "Martin Scorsese",
+      "stars": [
+        "Leonardo DiCaprio",
+        "Emily Mortimer",
+        "Mark Ruffalo"
+      ],
+      "poster": "https://br.web.img2.acsta.net/r_1280_720/img/06/a3/06a3a4901ffc378b3a2b065ca15b3fbb.jpg",
+      "myRating": 10,
+      "obs": "",
+      "progress": ""
+    }
+  ],
+  "my-list": [
+    {
+      "id": 7,
+      "title": "Ilha do Medo",
+      "duration": 138,
+      "year": 2010,
+      "rating": 8.2,
+      "description": "Na década de 50, a fuga de uma assassina leva o detetive Teddy Daniels e seu parceiro a investigarem o seu desaparecimento de um quarto trancado em um hospital psiquiátrico. Lá, uma rebelião se inicia e o agente terá que enfrentar seus próprios medos.",
+      "director": "Martin Scorsese",
+      "stars": [
+        "Leonardo DiCaprio",
+        "Emily Mortimer",
+        "Mark Ruffalo"
+      ],
+      "poster": "https://br.web.img2.acsta.net/r_1280_720/img/06/a3/06a3a4901ffc378b3a2b065ca15b3fbb.jpg",
+      "myRating": 8.5,
+      "obs": null,
+      "progress": "Não assisti"
+    },
+    {
+      "id": 5,
+      "title": "Por Água Abaixo",
+      "duration": 86,
+      "year": 2006,
+      "rating": 4,
+      "description": "Roddy é um ratinho acostumado a um bairro luxuoso de Londres. Sem querer, ele dá uma descarga infeliz e acaba nos esgotos, onde terá de aprender a viver de uma forma completamente diferente.",
+      "director": "David Bowers",
+      "stars": [
+        "Hugh Jackman(voz)",
+        "Kate Winslet(voz)",
+        "Ian McKellen(voz)"
+      ],
+      "poster": "https://upload.wikimedia.org/wikipedia/pt/a/a0/PorAguaAbaixo.jpg",
+      "myRating": 7,
+      "obs": null,
+      "progress": "Já terminei :)"
+    },
+    {
+      "id": 3,
+      "title": "A Criada",
+      "duration": 145,
+      "year": 2016,
+      "rating": 8.1,
+      "description": "Coreia do Sul, anos 1930. Durante a ocupação japonesa, a jovem Sookee é contratada para trabalhar para uma herdeira nipônica, Hideko, que leva uma vida isolada ao lado do tio autoritário. Só que Sookee guarda um segredo: ela e um vigarista planejam desposar a herdeira, roubar sua fortuna e trancafiá-la em um sanatório. Tudo corre bem com o plano, até que Sookee aos poucos começa a compreender as motivações de Hideko.",
+      "director": "Park Chan-wook",
+      "stars": [
+        "Kim Min-hee",
+        "Ha Jung-woo",
+        "Cho Jin-woong"
+      ],
+      "poster": "http://www.artecines.com.br/wp-content/uploads/2016/10/the-handmaiden.jpg",
+      "myRating": 9.9,
+      "obs": null,
+      "progress": "Já terminei :)"
+    },
+    {
+      "id": 1,
+      "title": "Interestelar",
+      "duration": 169,
+      "year": 2017,
+      "rating": 8.7,
+      "description": "As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.",
+      "director": "Christopher Nolan",
+      "stars": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain"
+      ],
+      "poster": "https://br.web.img3.acsta.net/pictures/14/10/31/20/39/476171.jpg",
+      "myRating": 7,
+      "obs": "",
+      "progress": "Já terminei :)"
+    }
+  ]
+}

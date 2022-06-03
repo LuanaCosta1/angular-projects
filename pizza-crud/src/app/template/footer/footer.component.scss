@@ -1,0 +1,67 @@
+@import '../../../styles.scss';
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    margin-top: 1rem;
+    bottom: 0;
+    width: 100%;
+    background-color: $white-color;
+    color: $black-color;
+}
+
+.footer {
+    padding: 2rem 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    row-gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__about, .footer__links, .footer__social-media {
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__title, .links__title, .social-media__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.about__paragraph {
+    font-size: 1rem;
+    padding-top: .5rem;
+    width: 80%;
+    margin: 0;
+}
+
+.links__list, .social-media__list {
+    list-style: none;
+    padding-top: .5rem;
+}
+
+.list__link:hover, .list__icons:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links__list i, .list__icons i{
+    padding-right: .5rem;
+}
+
+@media (max-width: 550px) {
+    .footer {
+        padding: .5rem;
+    }
+}

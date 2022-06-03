@@ -1,0 +1,35 @@
+<div class="container" *ngIf="pizza">
+  <p-toast></p-toast>
+  <div class="container__form">
+    <h1 class="form__title">{{pizza.name}}</h1>
+    <div class="form__name">
+      <label for="nome">Nome</label>
+      <input pInputText type="text" id="nome" [(ngModel)]="pizza.name" />
+    </div>
+    
+    <label for="ingredients" class="form__ingredients">Ingredientes</label>
+    <p-listbox [options]="ingredients" [metaKeySelection]="false" [checkbox]="true" [filter]="true" [multiple]="true"
+      optionLabel="name" [listStyle]="{'max-height':'250px'}" [style]="{'width':'100%'}"
+      [(ngModel)]="selectedIngredients" id="ingredients">
+      <ng-template let-ingredients pTemplate="item">
+        <div class="ingredients-item">
+          <div>{{ingredients.name}}</div>
+        </div>
+      </ng-template>
+    </p-listbox>
+
+    <div class="form__price">
+      <label for="price">Preço </label>
+                <p-inputNumber [showButtons]="true" inputId="stacked" mode="currency" currency="BRL" id="price"
+                    [(ngModel)]="pizza.price" class="price__input">
+                </p-inputNumber>
+    </div>
+
+    <div class="container__buttons">
+      <p-button class="buttons__button-create" (click)="save()" label="Salvar" icon="pi pi-check"></p-button>
+
+      <button pButton pRipple type="button" label="Voltar" class="buttons__button-back p-button-outlined"
+          icon="pi pi-angle-left" (click)="goBack()"></button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+@import '../../../../styles.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form__title {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: $primary-color;
+    letter-spacing: 2px;
+}
+
+.container__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    background-color: $white-color;
+
+    min-width: 300px;
+}
+
+.info-input__name, .info-input__ingredients, .info-input__price {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 1rem;
+
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.info-input__price {
+    width: 100%;
+}
+
+.price__input {
+    width: 100%;
+}
+
+.info-input__ingredients {
+    width: 100%;
+}
+
+.form__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}

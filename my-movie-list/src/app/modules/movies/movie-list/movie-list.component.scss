@@ -1,0 +1,176 @@
+@import "../../../../styles.scss";
+
+main {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.nav__button-back,
+.p-input-icon-left,
+.p-input-icon-left input {
+  padding: 1rem;
+}
+
+.p-input-icon-left {
+  padding: 0 1rem;
+}
+
+.card {
+  margin-bottom: 3rem;
+  max-width: 900px;
+  box-shadow: #313b503f 0px 4px 12px;
+  height: fit-content;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  color: $bg-color;
+}
+
+.card:hover {
+  box-shadow: #9599e283 0px 0px 0px 5px;
+}
+
+.card__movie-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-detail__info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.info__title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.info__min {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.info__stars {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info__actors {
+  display: flex;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.info__description {
+  font-size: 1.1rem;
+}
+
+.info__buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.info__buttons button {
+  padding: 1rem;
+  width: 100%;
+}
+
+.poster-box__poster,
+.movie-detail__poster-box {
+  width: 280px;
+}
+
+.poster-box__poster {
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav__button-back,
+  .p-input-icon-left,
+  .p-input-icon-left input,
+  .nav__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .card__movie-detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movie-detail__info {
+    padding-left: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .info__min {
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, auto);
+  }
+
+  .info__stars {
+      align-items: center;
+      justify-content: center;
+  }
+
+  .info__actors {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+
+  .info__buttons {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .movie-detail__poster-box, .poster-box__poster {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+  }
+}

@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="container__add-pizza">
+        <button routerLink="/pizza-create" pButton pRipple icon="pi pi-plus" class="add-pizza__button">Adicionar
+            Pizza</button>
+    </div>
+    <p-toast></p-toast>
+
+    <div class="container__cards">
+
+        <div class="cards__pizza-card" *ngFor="let pizza of pizzas">
+            <div class="pizza-card__info">
+                <h1 class="info__name">{{pizza.name}}</h1>
+                <div class="info__list-buttons">
+                    <div class="list-buttons__ingredients">
+                        <h1 class="list-buttons__title">Ingredientes</h1>
+                        <ul *ngFor="let ingredient of pizza.ingredients" class="ingredients__ingredients-list">
+                            <li class="ingredients-list__item">{{ingredient}}</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="list-buttons__control">
+                        <div class="control__price-box">
+                            <h1 class="price-box__title">Preço</h1>
+                            <p class="price-box__price">{{pizza.price | currency:'BRL':true }}</p>
+                        </div>
+    
+                        <div class="control__buttons">
+                            <button pButton pRipple type="button" class="buttons__button-edit"
+                                routerLink="/pizzas/{{pizza.id}}">Selecionar pizza</button>
+                            <button pButton pRipple type="button" icon="pi pi-times"
+                                class="buttons__button-remove p-button-danger p-button-outlined" (click)="remove(pizza)">
+                                Remover</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <p-confirmDialog header="Cuidado" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+</div>

@@ -1,0 +1,86 @@
+.banner {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://ingresso-a.akamaihd.net/prd/img/movie/batman/77547685-09f7-4297-bb9c-5884577b0b22.jpg?impolicy=nsm-hero');
+    background-position: center;
+    background-size: cover;
+}
+
+.banner__about {
+    color: #fff;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 3rem;
+}
+
+.about__text {
+    font-size: 1.2rem;
+}
+
+.text__highlight {
+    letter-spacing: .5rem;
+    font-size: 2rem;
+}
+
+.about__button {
+    width: fit-content;
+    padding: .3rem 1rem;
+    margin-top: 1rem;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.movie-list hr {
+    margin-top: .5rem;
+}
+
+.movie-list__title {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.movie-list__movies {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: space-between;
+}
+
+.movies__movie-card, .movie-card__poster {
+    width: 200px;
+    cursor: pointer;
+}
+
+.movie-card__title {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 550px) {
+    .banner__about {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .movie-list__movies {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

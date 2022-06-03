@@ -1,0 +1,40 @@
+<header>
+    <div class="header_title"><h1>Pesquise o nome do filme</h1></div>
+    <span class="p-input-icon-left header__search-input">
+        <i class="pi pi-search"></i>
+        <input pInputText type="search" placeholder="Pesquisar" (keyup)="filteredWord = $any($event.target).value" class="search-input__input">
+    </span>
+</header>
+
+<p-accordion>
+    <p-accordionTab *ngFor="let movie of (movies | filterTitle : filteredWord)" header="{{ movie.title }}" class="card">
+            <div class="card__movie-detail">
+                <div class="movie-detail__poster-box">
+                    <img src="{{movie.poster}}" alt="" class="poster-box__poster">
+                </div>
+                <div class="movie-detail__info">
+                    <h1 class="info__title"> {{ movie.title }} </h1>
+                    <div class="info__min">
+                        <p> {{ movie.year }} </p>
+                        <p> {{ movie.duration | duration}} </p>
+                        <p> {{ movie.director }} </p>
+                    </div>
+                    <label for="rating-stars" class="info__stars">
+                        <p-rating [ngModel]="movie.rating | starsRating" [readonly]="true" [stars]="5" [cancel]="false"
+                            id="rating-stars"></p-rating>
+                        <span class="rating-stars__title">{{ movie.rating }}</span>
+                    </label>
+                    <div class="info__actors">
+                        <div *ngFor="let star of movie.stars">
+                            <p-chip class="actors__chip" label="{{ star }}" icon="pi pi-user"></p-chip>
+                        </div>
+                    </div>
+                    <p class="info__description"> {{ movie.description }} </p>
+                    <div class="info__buttons">
+                        <button pButton icon="pi pi-caret-right" pRipple type="button" class="p-button-secondary"
+                            label="Selecionar Filme" routerLink="/movies/movies/{{movie.id}}"></button>
+                    </div>
+                </div>
+            </div>
+    </p-accordionTab>
+</p-accordion>

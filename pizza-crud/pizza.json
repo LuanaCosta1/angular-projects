@@ -1,0 +1,173 @@
+{
+  "ingredients": [
+    {
+      "name": "Molho"
+    },
+    {
+      "name": "Queijo"
+    },
+    {
+      "name": "Queijo Mussarela"
+    },
+    {
+      "name": "Tomate"
+    },
+    {
+      "name": "Orégano"
+    },
+    {
+      "name": "Frango"
+    },
+    {
+      "name": "Calabresa"
+    },
+    {
+      "name": "Catupiry"
+    },
+    {
+      "name": "Cebola"
+    },
+    {
+      "name": "Atum"
+    },
+    {
+      "name": "Presunto"
+    },
+    {
+      "name": "Ovo"
+    },
+    {
+      "name": "Palmito"
+    },
+    {
+      "name": "Ervilha"
+    },
+    {
+      "name": "Brocolis"
+    },
+    {
+      "name": "Bacon"
+    },
+    {
+      "name": "Azeitona"
+    },
+    {
+      "name": "Camarão"
+    },
+    {
+      "name": "Pimenta"
+    },
+    {
+      "name": "Pimentão"
+    },
+    {
+      "name": "Aliche"
+    },
+    {
+      "name": "Queijo Cheddar"
+    },
+    {
+      "name": "Queijo Provolone"
+    },
+    {
+      "name": "Queijo Gorgonzola"
+    },
+    {
+      "name": "Queijo Parmesão"
+    },
+    {
+      "name": "Requeijão Cremoso"
+    },
+    {
+      "name": "Cream Cheese"
+    },
+    {
+      "name": "Carne Moida"
+    },
+    {
+      "name": "Doce de leite"
+    },
+    {
+      "name": "Chocolate"
+    },
+    {
+      "name": "Chocolate Branco"
+    },
+    {
+      "name": "Leite ninho"
+    },
+    {
+      "name": "Chocolate Amargo"
+    },
+    {
+      "name": "Granulado"
+    },
+    {
+      "name": "Banana"
+    },
+    {
+      "name": "Morango"
+    },
+    {
+      "name": "Danoninho"
+    }
+  ],
+  "pizzas": [
+    {
+      "id": 1,
+      "name": "Baiana",
+      "ingredients": [
+        "Molho",
+        "Calabresa",
+        "Cebola"
+      ],
+      "price": 20
+    },
+    {
+      "id": 2,
+      "name": "Portuguesa",
+      "ingredients": [
+        "Queijo",
+        "Presunto",
+        "Palmito",
+        "Ovo",
+        "Ervilha"
+      ],
+      "price": 15.5
+    },
+    {
+      "id": 3,
+      "name": "4 Queijos",
+      "ingredients": [
+        "Queijo Mussarela",
+        "Queijo Gorgonzola",
+        "Queijo Parmesão",
+        "Queijo Provolone"
+      ],
+      "price": 19.9
+    },
+    {
+      "name": "Pizza Doce",
+      "ingredients": [
+        "Chocolate",
+        "Doce de leite",
+        "Leite ninho",
+        "Morango"
+      ],
+      "price": "25",
+      "id": 7
+    },
+    {
+      "name": "Mussarela",
+      "ingredients": [
+        "Molho",
+        "Queijo Mussarela",
+        "Tomate",
+        "Orégano",
+        "Azeitona"
+      ],
+      "price": 19,
+      "id": 8
+    }
+  ]
+}

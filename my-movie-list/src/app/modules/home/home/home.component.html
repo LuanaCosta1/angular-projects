@@ -1,0 +1,22 @@
+<div class="banner">
+    <div class="banner__about">
+        <p class="about__text">
+            Da Warner Bros. Pictures chega <strong class="text__highlight">THE BATMAN</strong> com o realizador Matt
+            Reeves no comando e protagonizado por Robert Pattinson no duplo papel de detetive de Gotham City e do seu
+            alter ego, o bilionário solitário Bruce Wayne.
+        </p>
+        <button class="about__button" routerLink="/movies/movies/2">Saiba mais</button>
+    </div>
+</div>
+
+<div class="movie-list">
+    <h1 class="movie-list__title">Filmes disponíveis
+        <hr>
+    </h1>
+    <div class="movie-list__movies">
+        <div class="movies__movie-card" *ngFor="let movie of movies">
+                <img src="{{ movie.poster }}" alt="poster do filme {{movie.title}}" class="movie-card__poster" routerLink="/movies/movies/{{movie.id}}">
+                <p class="movie-card__title">{{movie.title}}</p>
+        </div>
+    </div>
+</div>

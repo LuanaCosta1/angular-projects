@@ -1,0 +1,157 @@
+<main>
+    <header class="header">
+        <nav class="header__nav">
+            <button pButton class="nav__button-back back-button" icon="pi pi-arrow-left" label="Voltar"
+                (click)="goBack()"></button>
+            <h1 class="nav__title">Minha lista</h1>
+            <div class="nav__controls">
+                <p-dropdown [options]="order" [(ngModel)]="selectedOrder" optionLabel="name" id="order"
+                    (click)="orderByRating()" class="controls__dropdown"></p-dropdown>
+            </div>
+        </nav>
+    </header>
+
+    <p-toast></p-toast>
+    <p-confirmDialog></p-confirmDialog>
+
+    <div *ngFor="let movie of list" class="card">
+        <div class="card__movie-detail">
+            <div class="movie-detail__poster-box">
+                <img src="{{movie.poster}}" alt="" class="poster-box__poster">
+            </div>
+            
+            <p-tabView class="movie-detail">
+                <p-tabPanel header="Info">
+                    <div class="movie-detail__info">
+                        <h1 class="info__title"> {{ movie.title }} </h1>
+                        <div class="info__min">
+                            <p> {{ movie.year }} </p>
+                            <p> {{ movie.duration}} </p>
+                            <p> {{ movie.director }} </p>
+                        </div>
+                        <div class="info__min">
+                            <p> {{ movie.myRating }} </p>
+                            <p> {{ movie.obs }} </p>
+                            <P> {{ movie.progress }} </P>
+                        </div>
+                        <label for="rating-stars" class="info__stars">
+                            <p-rating [ngModel]="movie.rating" [readonly]="true" [stars]="5" [cancel]="false"
+                                id="rating-stars">
+                            </p-rating>
+                            <span class="rating-stars__title">{{ movie.rating }}</span>
+                        </label>
+                        <p class="info__description"> {{ movie.description }} </p>
+                        <div class="info__buttons">
+
+                            <button pButton icon="pi pi-trash" label="Remover da Lista"
+                                class="movie-card__remove-button p-button-warning" (click)="remove(movie)"></button>
+
+                            <button pButton pRipple type="button" class="movie-card__remove-button p-button-secondary"
+                                label="Selecionar Filme" routerLink="/movies/movies/{{movie.id}}"></button>
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <p-tabPanel header="Minhas observações" class="my-obs">
+                    <form [formGroup]="form" class="movie-detail__edit-form">
+                        <div class="edit-form__info-min">
+                            <p> Nota: {{ movie.myRating }} </p>
+                            <p> Observações: {{ movie.obs }} </p>
+                            <P> Progresso: {{ movie.progress }} </P>
+                        </div>
+                        <div class="edit-form__rating">
+                            <label for="nota">Nota: </label>
+                            <input pInputText type="number" id="nota" formControlName="nota"
+                                [ngClass]="{ 'is-invalid': submitted && f['nota'].errors }">
+                        </div>
+                        <div *ngIf="submitted && f['nota'].errors" class="edit-form__invalid-feedback">
+                            <div *ngIf="f['nota'].errors['required']">Campo obrigatório</div>
+                            <div *ngIf="f['nota'].errors['min'] || f['nota'].errors['max']">Nota deve ser entre 0 a 10
+                            </div>
+                        </div>
+                        <div class="edit-form__obs">
+                            <label for="age">Obs: </label>
+                            <input pInputText type="text" id="obs" formControlName="obs">
+                        </div>
+                        <div class="edit-form__going">
+                            <label for="progress">Progresso: </label>
+                            <p-dropdown [options]="progress" formControlName="selectedProgressStatus"
+                                optionLabel="status" id="progress"></p-dropdown>
+                        </div>
+
+                        <div class="info__buttons">
+                            <button pButton class="p-button-secondary p-button-text edit-form__close-button"
+                            icon="pi pi-times" (click)="reset()" label="Resetar" styleClass="p-button-text"></button>
+
+                        <button pButton class="p-button-sucess edit-form__confirm-button" icon="pi pi-check"
+                            (click)="edit(movie)" label="Salvar" styleClass="p-button-text"></button>
+                        </div>
+                    </form>
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+
+        <!-- <div class="card__movie-detail">
+            <div class="movie-detail__poster-box">
+                <img src="{{movie.poster}}" alt="" class="poster-box__poster">
+            </div>
+            <div class="movie-detail__info">
+                <h1 class="info__title"> {{ movie.title }} </h1>
+                <div class="info__min">
+                    <p> {{ movie.year }} </p>
+                    <p> {{ movie.duration}} </p>
+                    <p> {{ movie.director }} </p>
+                </div>
+                <div class="info__min">
+                    <p> {{ movie.myRating }} </p>
+                    <p> {{ movie.obs }} </p>
+                    <P> {{ movie.progress }} </P>
+                </div>
+                <label for="rating-stars" class="info__stars">
+                    <p-rating [ngModel]="movie.rating" [readonly]="true" [stars]="5" [cancel]="false" id="rating-stars">
+                    </p-rating>
+                    <span class="rating-stars__title">{{ movie.rating }}</span>
+                </label>
+                <p class="info__description"> {{ movie.description }} </p>
+                <div class="info__buttons">
+
+                    <button pButton icon="pi pi-trash" label="Remover da Lista"
+                        class="movie-card__remove-button p-button-warning" (click)="remove(movie)"></button>
+
+                    <button pButton pRipple type="button" class="movie-card__remove-button p-button-secondary"
+                        label="Selecionar Filme" routerLink="/movies/movies/{{movie.id}}"></button>
+                </div>
+                <p-accordion>
+                    <p-accordionTab header="Editar informações: {{ movie.title }}">
+                        <form [formGroup]="form" class="movie-detail__edit-form">
+                            <div class="edit-form__rating">
+                                <label for="nota">Nota: </label>
+                                <input pInputText type="number" id="nota" formControlName="nota"
+                                    [ngClass]="{ 'is-invalid': submitted && f['nota'].errors }">
+                            </div>
+                            <div *ngIf="submitted && f['nota'].errors" class="invalid-feedback">
+                                <div *ngIf="f['nota'].errors['required']">Campo obrigatório</div>
+                                <div *ngIf="f['nota'].errors['min'] || f['nota'].errors['max']">Nota deve ser entre 0 a 10</div>
+                            </div>
+                            <div class="edit-form__obs">
+                                <label for="age">Obs: </label>
+                                <input pInputText type="text" id="obs" formControlName="obs">
+                            </div>
+                            <div class="edit-form__going">
+                                <label for="progress">Progresso: </label>
+                                <p-dropdown [options]="progress" formControlName="selectedProgressStatus" optionLabel="status"
+                                    id="progress"></p-dropdown>
+                            </div>
+            
+                            <button pButton class="p-button-secondary p-button-text edit-form__close-button" icon="pi pi-times"
+                                (click)="reset()" label="Resetar" styleClass="p-button-text"></button>
+            
+                            <button pButton class="p-button-sucess edit-form__confirm-button" icon="pi pi-check"
+                                (click)="edit(movie)" label="Salvar" styleClass="p-button-text"></button>
+                        </form>        
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+
+        </div> -->
+    </div>
+</main>
